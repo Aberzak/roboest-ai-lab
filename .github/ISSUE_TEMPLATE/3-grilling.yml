@@ -1,0 +1,21 @@
+name: "Grilling: a decision to take"
+description: A decision with a price. Answered by /grill-with-docs, leaving CONTEXT.md entries and, if it qualifies, an ADR.
+title: "Decide: "
+labels: ["wayfinder:grilling", "needs-triage"]
+body:
+  - type: textarea
+    id: decision
+    attributes:
+      label: The decision
+      description: Either/or, with the price of each option.
+      placeholder: "Option A gives us ... and costs us ... / Option B gives us ... and costs us ..."
+    validations: { required: true }
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Inputs (research notes, prototypes)
+  - type: textarea
+    id: blocked
+    attributes:
+      label: Blocked by
+      placeholder: "Blocked by #N, or leave empty"

@@ -1,0 +1,21 @@
+name: "Task: build something decided"
+description: Work that is fully decided. Blocked by at least one grilling issue.
+title: "Task: "
+labels: ["wayfinder:task", "needs-triage"]
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What is true when this is done, demoable on its own.
+    validations: { required: true }
+  - type: textarea
+    id: decisions
+    attributes:
+      label: Rests on (ADRs, research, prototypes)
+  - type: textarea
+    id: blocked
+    attributes:
+      label: Blocked by
+      placeholder: "Blocked by #N"
+    validations: { required: true }

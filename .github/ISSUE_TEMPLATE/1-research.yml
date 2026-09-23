@@ -1,0 +1,29 @@
+name: "Research: a fact we need"
+description: A question that needs a fact, not an opinion. Answered by /research in docs/research/.
+title: "Research: "
+labels: ["wayfinder:research", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Public repo: public primary sources only. Internal facts go in a question for a person."
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: One question, as a sentence. What exactly must be true or false?
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: Which decision waits on this answer
+      description: Link the grilling issue or ADR that needs it.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Where to look (primary sources)
+      placeholder: "Official government page, the law text, Microsoft Learn, a CLI --help, a probe..."
+  - type: textarea
+    id: blocked
+    attributes:
+      label: Blocked by
+      placeholder: "Blocked by #N (one per line), or leave empty"

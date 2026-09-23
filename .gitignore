@@ -1,0 +1,10 @@
+.claude/settings.local.json
+.claude/worktrees/
+.claude/skills/
+.agents/
+.scratch/
+handoff.md
+node_modules/
+.env
+.env.*
+skills-lock.json

@@ -1,0 +1,21 @@
+name: "Request for another group"
+description: A question or finding for another group. Starts as needs-triage; the other group triages it.
+title: ""
+labels: ["needs-triage", "handoff"]
+body:
+  - type: dropdown
+    id: group
+    attributes:
+      label: For group
+      options: ["groep-a", "groep-b", "groep-c", "groep-d"]
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What you found or need
+    validations: { required: true }
+  - type: textarea
+    id: where
+    attributes:
+      label: Where it came from
+      placeholder: "Link the note, prototype branch, PR or comment"

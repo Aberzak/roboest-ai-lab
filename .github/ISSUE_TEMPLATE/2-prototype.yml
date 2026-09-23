@@ -1,0 +1,26 @@
+name: "Prototype: a question to answer by building"
+description: A design question that will not settle on paper. Answered by /prototype on a prototype/<name> branch.
+title: "Prototype: "
+labels: ["wayfinder:prototype", "needs-triage"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: The one question this prototype answers
+    validations: { required: true }
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: ["UI: variants A/B/C side by side", "Logic: a state machine walkthrough"]
+    validations: { required: true }
+  - type: textarea
+    id: who
+    attributes:
+      label: Who chooses, by looking at it
+      placeholder: "The group, a claimant, an approver..."
+  - type: textarea
+    id: blocked
+    attributes:
+      label: Blocked by
+      placeholder: "Blocked by #N, or leave empty"
