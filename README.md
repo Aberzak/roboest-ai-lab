@@ -6,12 +6,17 @@ A public practice repository for the Roboest AI coding training. Four groups wor
 
 ## Quick start (10 minutes, once)
 
-You need: git, Node 20+, Claude Code, the GitHub CLI `gh`, a GitHub account that the facilitator added as a collaborator.
+You need: git, Node 20+, Claude Code, the GitHub CLI `gh`, PowerShell 7 (`pwsh`), a GitHub account.
+
+You work in **your own fork**: your repo, your board, your PRs. A fork copies the files but not the issues, so one script puts the case issues on your board. Read [CLAUDE.md § Solo mode](CLAUDE.md#solo-mode-active-your-own-fork).
 
 ```powershell
 gh auth login                                   # GitHub.com, HTTPS, browser
-gh repo clone Aberzak/roboest-ai-lab
+gh repo fork Aberzak/roboest-ai-lab --clone     # your copy on GitHub, cloned to this folder
 cd roboest-ai-lab
+pwsh ./scripts/Seed-Board.ps1                   # turns on Issues in your fork, adds the ten case issues,
+                                                # and points gh at YOUR fork, not the original
+gh repo set-default --view                      # must print <your-handle>/roboest-ai-lab
 
 # the skills: every participant installs the same set; .claude/skills/ is git-ignored in this public repo
 npx skills add mattpocock/skills -a claude-code -y `

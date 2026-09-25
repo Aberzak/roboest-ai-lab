@@ -1,5 +1,11 @@
 # The four team cases
 
+## Working solo (now)
+
+Pick one case and follow its **Steps** on your own, 45–60 minutes, in your own fork (see the Quick start). You play every role; skip the exchange and the cross-group review. The case issues are on your fork's board: assign them to yourself, close them, open a PR to your own `main` and merge it. Your deliverables stay the same: at least one research note and one ADR. Time left? Take a second case.
+
+## In groups
+
 Four groups, one board, one domain (Expenses). Every case ends with **at least one research note and at least one ADR**, and every case uses a different skill as its engine.
 
 | Case | Group | Engine | Research | ADR from `/grill-with-docs` |

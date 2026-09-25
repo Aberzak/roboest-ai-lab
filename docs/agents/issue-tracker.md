@@ -1,5 +1,7 @@
 # docs/agents/issue-tracker.md: GitHub Issues via `gh`
 
+> **Solo mode is active** (`CLAUDE.md` § Solo mode): the board is the Issues of the participant's own fork. Every command below targets the fork, never its parent; check with `gh repo set-default --view` before the first write.
+
 The board is the GitHub Issues of this repository. Tool: the GitHub CLI `gh`, authenticated with `gh auth login`. Run every command from the repo root; `gh` picks the repo from the git remote.
 
 ## First write of every session: claim
