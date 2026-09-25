@@ -1,6 +1,6 @@
 # Roboest AI Lab
 
-A public practice repository for the Roboest AI coding training. Four groups work here at the same time with Claude Code and the Matt Pocock skills on one shared issue board. The domain is **Expenses**: a small, new module that lets an employee claim expenses (a receipt, a trip) and lets a manager approve them. Nothing here is production code, and nothing here comes from a customer.
+A public practice repository for the Roboest AI coding training. Every participant works alone, in their own fork, with Claude Code and the Matt Pocock skills on their own issue board. The domain is **Expenses**: a small, new module that lets an employee claim expenses (a receipt, a trip) and lets a manager approve them. Nothing here is production code, and nothing here comes from a customer.
 
 > **This repository is public.** Everyone on the internet can read every issue, comment, commit and file. Read [CLAUDE.md § Public repo](CLAUDE.md#public-repo-what-never-goes-in-here) before you write anything.
 
@@ -29,7 +29,7 @@ npx skills add mattpocock/skills -a claude-code -y `
 claude
 ```
 
-In Claude Code, check: `/ask-matt I am new here, which skill do I start with?` must answer with the main flow. Then open your group's case in [`cases/`](cases/).
+In Claude Code, check: `/ask-matt I am new here, which skill do I start with?` must answer with the main flow. Then pick a case in [`cases/`](cases/).
 
 The git guardrail hook ships with the repo (`.claude/settings.json`): the agent cannot `git push`, `reset --hard`, `clean -f`, `branch -D` or `checkout .`. The agent proposes; a human pushes.
 

@@ -9,7 +9,7 @@ Participants work alone, each in their own fork, to learn the skills. This secti
 - **Your board is the Issues of your fork.** Create, assign, comment and close freely there; `scripts/Seed-Board.ps1` put the ten case issues on it.
 - **Never write to the original repo** (the fork's parent, `Aberzak/roboest-ai-lab`): no issues, comments or PRs there. Before the first `gh` write of a session, check `gh repo set-default --view`: it must print the fork, owned by the participant. If it prints the parent, stop and ask the human.
 - PRs go from a branch of the fork to `main` of the fork. The participant may approve and merge their own.
-- Ignore group labels, roles, the exchange and the cross-group review in the cases. `Blocked by` still holds: do the research and the prototype before the decision.
+- The `groep-*` labels only tell which case an issue belongs to. `Blocked by` still holds: do the research and the prototype before the decision.
 - A fork of a public repo is public too: the rules below still apply.
 
 ## Public repo: what never goes in here
